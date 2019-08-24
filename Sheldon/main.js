@@ -13,6 +13,7 @@ for (; j < c; j++) {
 console.log(numerosPrimos);
 
 function ver(numero){
+var res1 = 0;
 
 for(let i =1; i < numerosPrimos.length; i++ ){
     if(numero == numerosPrimos[i]){
@@ -20,14 +21,19 @@ for(let i =1; i < numerosPrimos.length; i++ ){
         var arreglo = (""+numero + "").split(''); 
         var multi = arreglo[0] * arreglo[1];
         if(multi == posicion){
-            console.log("SI es")
+             var res1 = 1;
         }
         break
     }else{
-        console.log("Noo es")
+        
     }
 }
 
+if(res1 != 0){
+    return 1
+}else{
+    return 0
+}
 
 }
 
