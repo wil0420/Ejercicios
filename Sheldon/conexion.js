@@ -16,7 +16,7 @@ $("#enviar" ).click(function() {
          if(respuesta2 == 1){
             $(".sheldon").text("Es Primo sheldon")
          }else{
-            $(".sheldon").empty()
+            $(".sheldon").text("No es primo sheldon")
          }
      }
 });
